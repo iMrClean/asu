@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ws-inventory
+  datasource:
+    driver-class-name: ${INVENTORY_DATASOURCE_DRIVER_CLASS_NAME}
+    url: ${INVENTORY_DATASOURCE_URL}
+    username: ${INVENTORY_DATASOURCE_USERNAME}
+    password: ${INVENTORY_DATASOURCE_PASSWORD}
+  liquibase:
+    change-log: classpath:/db/db.changelog-master.yml
+server:
+  port: ${INVENTORY_SERVER_PORT}

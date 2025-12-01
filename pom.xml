@@ -18,6 +18,7 @@
   <modules>
     <module>ws-product</module>
     <module>ws-order</module>
+    <module>ws-inventory</module>
   </modules>
   
   <name>asu</name>

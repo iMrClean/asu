@@ -1,0 +1,2 @@
+###
+GET http://localhost:8092/api/inventory?skuCode=APPLE-IP14-23&quantity=50
