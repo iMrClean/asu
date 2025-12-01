@@ -1,0 +1,26 @@
+###
+GET http://localhost:8090/api/product
+Content-Type: application/json
+
+###
+POST http://localhost:8090/api/product
+Content-Type: application/json
+
+{
+  "name": "iPhone 15 Plus",
+  "price": 0
+}
+
+###
+PUT http://localhost:8090/api/product/10
+Content-Type: application/json
+
+{
+  "price": 899.00
+}
+
+###
+GET http://localhost:8090/api/product/10
+
+###
+DELETE http://localhost:8090/api/product/10

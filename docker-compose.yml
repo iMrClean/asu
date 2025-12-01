@@ -1,0 +1,12 @@
+services:
+  
+  oracle:
+    image: gvenzl/oracle-free:latest
+    container_name: oracle-asu
+    ports:
+      - "1521:1521"
+    environment:
+      ORACLE_PASSWORD: "ROOT"
+    volumes:
+      - "./db:/container-entrypoint-initdb.d"
+    restart: always

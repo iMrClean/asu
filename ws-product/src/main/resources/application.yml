@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ws-product
+  datasource:
+    driver-class-name: ${PRODUCT_DATASOURCE_DRIVER_CLASS_NAME}
+    url: ${PRODUCT_DATASOURCE_URL}
+    username: ${PRODUCT_DATASOURCE_USERNAME}
+    password: ${PRODUCT_DATASOURCE_PASSWORD}
+  liquibase:
+    change-log: classpath:/db/db.changelog-master.yml
+  jpa:
+    open-in-view: false
+server:
+  port: ${PRODUCT_SERVER_PORT}
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html

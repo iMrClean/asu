@@ -16,6 +16,7 @@
   <version>${revision}</version>
 
   <modules>
+    <module>ws-product</module>
   </modules>
   
   <name>asu</name>
@@ -29,7 +30,6 @@
     <spring-cloud.version>2025.1.0</spring-cloud.version>
     <mapstruct.version>1.6.3</mapstruct.version>
     <springdoc-openapi-starter-webmvc-ui.version>3.0.0</springdoc-openapi-starter-webmvc-ui.version>
-    <springdoc-openapi-starter-webmvc-api.version>3.0.0</springdoc-openapi-starter-webmvc-api.version>
   </properties>
 
   <dependencyManagement>
@@ -50,11 +50,6 @@
         <groupId>org.springdoc</groupId>
         <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
         <version>${springdoc-openapi-starter-webmvc-ui.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springdoc</groupId>
-        <artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
-        <version>${springdoc-openapi-starter-webmvc-api.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
