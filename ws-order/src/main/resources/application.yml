@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ws-order
+  datasource:
+    driver-class-name: ${ORDER_DATASOURCE_DRIVER_CLASS_NAME}
+    url: ${ORDER_DATASOURCE_URL}
+    username: ${ORDER_DATASOURCE_USERNAME}
+    password: ${ORDER_DATASOURCE_PASSWORD}
+  liquibase:
+    change-log: classpath:/db/db.changelog-master.yml
+  jpa:
+    open-in-view: false
+server:
+  port: ${ORDER_SERVER_PORT}
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html

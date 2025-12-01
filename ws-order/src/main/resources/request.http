@@ -1,0 +1,27 @@
+###
+GET http://localhost:8091/api/orders
+Content-Type: application/json
+
+###
+POST http://localhost:8091/api/orders
+Content-Type: application/json
+
+{
+  "skuCode": "IPHONE-15-PLUS",
+  "price": 0,
+  "quantity": 1
+}
+
+###
+PUT http://localhost:8091/api/orders/21
+Content-Type: application/json
+
+{
+  "price": 899
+}
+
+###
+GET http://localhost:8091/api/orders/21
+
+###
+DELETE http://localhost:8091/api/orders/21
