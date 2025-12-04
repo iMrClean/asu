@@ -1,9 +1,9 @@
 ###
-GET http://localhost:8090/api/product
+GET http://localhost:8090/api/products
 Content-Type: application/json
 
 ###
-POST http://localhost:8090/api/product
+POST http://localhost:8090/api/products
 Content-Type: application/json
 
 {
@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:8090/api/product/10
+PUT http://localhost:8090/api/products/10
 Content-Type: application/json
 
 {
@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8090/api/product/10
+GET http://localhost:8090/api/products/10
 
 ###
-DELETE http://localhost:8090/api/product/10
+DELETE http://localhost:8090/api/products/10

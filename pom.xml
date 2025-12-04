@@ -16,6 +16,7 @@
   <version>${revision}</version>
 
   <modules>
+    <module>api-gateway</module>
     <module>ws-product</module>
     <module>ws-order</module>
     <module>ws-inventory</module>

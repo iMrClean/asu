@@ -1,0 +1,8 @@
+###
+GET http://localhost:8080/api/inventory?skuCode=IPHONE-15-PRO&quantity=10
+
+###
+GET http://localhost:8080/api/orders
+
+###
+GET http://localhost:8080/api/products

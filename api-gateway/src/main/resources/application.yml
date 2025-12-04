@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: ws-product
+              uri: http://localhost:${PRODUCT_SERVER_PORT}
+              predicates:
+                - Path=/api/products/**
+
+            - id: ws-order
+              uri: http://localhost:${ORDER_SERVER_PORT}
+              predicates:
+                - Path=/api/orders/**
+
+            - id: ws-inventory
+              uri: http://localhost:${INVENTORY_SERVER_PORT}
+              predicates:
+                - Path=/api/inventory/**
+server:
+  port: ${API_GATEWAY_PORT}
